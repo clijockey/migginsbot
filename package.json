@@ -1,0 +1,14 @@
+{
+  "name": "migginsBot",
+  "version": "1.0.0",
+  "description": "Demo chat bot using Ciso Spark.",
+  "author": "Rob Edwards <robedwa@cisco.com @clijockey>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sparkbot-starterkit": "latest",
+    "node-sparky": "latest"
+  }
+}
