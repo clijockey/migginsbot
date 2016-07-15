@@ -13,5 +13,5 @@ RUN npm install sparkbot-starterkit
 # Bundle app source
 COPY . /usr/src/app
 
-EXPOSE 8080
-CMD [ "npm", "start" ]
+EXPOSE 80
+EXPOSE 443

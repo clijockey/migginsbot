@@ -31,6 +31,8 @@ var config = {
     peopleId: "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80NTczMTFmMS00ZjVkLTQ2ZDQtOWJjMy03MGFlODZmMDhiOTg"
 };
 
+curl -v -X GET https://staging--migginsbot--migginsbot--e5fdb8.gce.shipped-cisco.com/ping
+
 
 // Starts your integration
 var bot = new SparkBot(config);
