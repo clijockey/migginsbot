@@ -1,2 +1,2 @@
 #!/bin/bash
-node index.js
+SPARK_TOKEN=$TOKEN node clijocky-bot.js
