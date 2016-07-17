@@ -1,5 +1,8 @@
 FROM node:argon
 
+# Port number to expose from docker container to host server
+EXPOSE 8080
+
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -13,4 +16,9 @@ RUN npm install sparkbot-starterkit
 # Bundle app source
 COPY . /usr/src/app
 
-EXPOSE 8080
+#Adding permission to access .shipped folder
+RUN chmod a+x .shipped/build .shipped/run .shipped/test
+
+#provide your build/run commands
+RUN [".shipped/build"]
+CMD .shipped/run

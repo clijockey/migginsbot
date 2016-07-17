@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Demo chat bot using Ciso Spark.",
   "author": "Rob Edwards <robedwa@cisco.com @clijockey>",
-  "main": "server.js",
+  "main": "clijocky-bot.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node clijocky-bot.js"
   },
   "dependencies": {
     "sparkbot-starterkit": "latest",
