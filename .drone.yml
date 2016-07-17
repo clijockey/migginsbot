@@ -1,13 +1,13 @@
 
 image: node:argon
 git:
-  path: github.com/clijockey/testingBot
+  path: github.com/clijockey/migginsbot
 script:
   - echo "build commands"
   - echo "no build command"
   - echo "no test command"
 clone:
-  path: github.com/clijockey/testingBot
+  path: github.com/clijockey/migginsbot
 build:
   image: node:argon
   commands:
