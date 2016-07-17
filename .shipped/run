@@ -1,2 +1,3 @@
 #!/bin/bash
-SPARK_TOKEN=$TOKEN node clijocky-bot.js
+#SPARK_TOKEN=$TOKEN node clijocky-bot.js
+node clijocky-bot.js
