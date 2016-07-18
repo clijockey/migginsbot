@@ -2,18 +2,13 @@
 image: node:argon
 git:
   path: github.com/clijockey/migginsbot
-script:
-  - echo "build commands"
-  - echo "no build command"
-  - echo "no test command"
-clone:
-  path: github.com/clijockey/migginsbot
-build:
-  image: node:argon
   commands:
-    - echo "build commands"
-    - echo "no build command"
-    - echo "no test command"
+      - echo "build commands"
+      - .shipped/build
+      - echo "Run commands;"
+      - .shipped/run
+      - echo "Test commands;"
+      - .shipped/test
 publish:
   docker:
     file: ./Dockerfile
@@ -23,4 +18,4 @@ publish:
     registry: $$docker_registry
     repo: $$docker_repo
     email: $$docker_user_email
-tag: $$COMMIT
+    tag: $$COMMIT
