@@ -3,11 +3,8 @@ git:
   path: github.com/clijockey/migginsbot
 script:
   - echo "build commands"
-  - .shipped/build
   - echo "run command"
-  - .shipped/run
   - echo "test command"
-  - .shipped/test
 clone:
   path: github.com/clijockey/migginsbot
 build:
