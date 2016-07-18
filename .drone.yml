@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 image: node:argon
 git:
   path: github.com/clijockey/migginsbot
@@ -10,14 +8,6 @@ git:
       - .shipped/run
       - echo "Test commands;"
       - .shipped/test
-=======
-build:
-  image: node:argon
-  commands:
-  - echo "build commands"
-  - echo "no build command"
-  - echo "no test command"
->>>>>>> d157c727660d60d84d3250e1a87ff22ddd26ce97
 publish:
   docker:
     file: ./Dockerfile
