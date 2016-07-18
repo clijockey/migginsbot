@@ -21,9 +21,9 @@ RUN npm install
 RUN chmod a+x .shipped/build .shipped/run .shipped/test
 
 # Provide your build/run commands
-RUN [".shipped/build"]
+#RUN [".shipped/build"]
 #CMD .shipped/run
-CMD [ "npm", "start" ]
+CMD [ "node","clijocky-bot.js" ]
 
 
 # Port number to expose from docker container to host server
