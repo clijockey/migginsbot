@@ -22,7 +22,9 @@ RUN chmod a+x .shipped/build .shipped/run .shipped/test
 
 # Provide your build/run commands
 RUN [".shipped/build"]
-CMD .shipped/run
+#CMD .shipped/run
+CMD [ "npm", "start" ]
+
 
 # Port number to expose from docker container to host server
-EXPOSE 80
+EXPOSE 8080
